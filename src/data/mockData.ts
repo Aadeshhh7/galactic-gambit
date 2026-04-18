@@ -1,0 +1,87 @@
+import type { Player, Tournament } from '../types';
+
+export const mockPlayers: Player[] = [
+  { id: '1', name: 'Magnus Carlsen', email: 'magnus@chess.com', rating: 2850, country: 'Norway', joinDate: '2024-01-15', wins: 45, losses: 3, draws: 12 },
+  { id: '2', name: 'Fabiano Caruana', email: 'fabi@chess.com', rating: 2800, country: 'USA', joinDate: '2024-01-20', wins: 42, losses: 5, draws: 10 },
+  { id: '3', name: 'Hikaru Nakamura', email: 'hikaru@chess.com', rating: 2780, country: 'USA', joinDate: '2024-02-01', wins: 40, losses: 7, draws: 11 },
+  { id: '4', name: 'Ding Liren', email: 'ding@chess.com', rating: 2760, country: 'China', joinDate: '2024-02-10', wins: 38, losses: 6, draws: 13 },
+  { id: '5', name: 'Ian Nepomniachtchi', email: 'ian@chess.com', rating: 2750, country: 'Russia', joinDate: '2024-02-15', wins: 37, losses: 8, draws: 12 },
+  { id: '6', name: 'Alireza Firouzja', email: 'alireza@chess.com', rating: 2740, country: 'France', joinDate: '2024-03-01', wins: 36, losses: 9, draws: 11 },
+  { id: '7', name: 'Wesley So', email: 'wesley@chess.com', rating: 2730, country: 'USA', joinDate: '2024-03-05', wins: 35, losses: 8, draws: 13 },
+  { id: '8', name: 'Anish Giri', email: 'anish@chess.com', rating: 2720, country: 'Netherlands', joinDate: '2024-03-10', wins: 34, losses: 9, draws: 14 },
+  { id: '9', name: 'Viswanathan Anand', email: 'vishy@chess.com', rating: 2710, country: 'India', joinDate: '2024-03-15', wins: 50, losses: 15, draws: 20 },
+  { id: '10', name: 'Levon Aronian', email: 'levon@chess.com', rating: 2700, country: 'USA', joinDate: '2024-03-20', wins: 33, losses: 10, draws: 13 },
+  { id: '11', name: 'Alexander Grischuk', email: 'alex@chess.com', rating: 2690, country: 'Russia', joinDate: '2024-04-01', wins: 32, losses: 11, draws: 12 },
+  { id: '12', name: 'Shakhriyar Mamedyarov', email: 'shakh@chess.com', rating: 2680, country: 'Azerbaijan', joinDate: '2024-04-05', wins: 31, losses: 12, draws: 11 },
+  { id: '13', name: 'Teimour Radjabov', email: 'teimour@chess.com', rating: 2670, country: 'Azerbaijan', joinDate: '2024-04-10', wins: 30, losses: 12, draws: 13 },
+  { id: '14', name: 'Maxime Vachier-Lagrave', email: 'mvl@chess.com', rating: 2660, country: 'France', joinDate: '2024-04-15', wins: 29, losses: 13, draws: 12 },
+  { id: '15', name: 'Sergey Karjakin', email: 'sergey@chess.com', rating: 2650, country: 'Russia', joinDate: '2024-04-20', wins: 28, losses: 14, draws: 11 },
+  { id: '16', name: 'Richard Rapport', email: 'richard@chess.com', rating: 2640, country: 'Romania', joinDate: '2024-05-01', wins: 27, losses: 15, draws: 10 },
+];
+
+export const mockTournaments: Tournament[] = [
+  {
+    id: '1',
+    name: 'Galactic Championship 2024',
+    description: 'The ultimate chess showdown among the stars',
+    startDate: '2024-12-01',
+    endDate: '2024-12-15',
+    location: 'Online',
+    format: 'swiss',
+    status: 'active',
+    maxPlayers: 32,
+    registeredPlayers: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16'],
+    rounds: 9,
+    currentRound: 4,
+    matches: [],
+    prizePool: '$50,000'
+  },
+  {
+    id: '2',
+    name: 'Nebula Knockout Cup',
+    description: 'Single elimination bracket tournament',
+    startDate: '2024-11-15',
+    endDate: '2024-11-20',
+    location: 'Online',
+    format: 'knockout',
+    status: 'completed',
+    maxPlayers: 16,
+    registeredPlayers: ['1', '2', '3', '4', '5', '6', '7', '8'],
+    rounds: 4,
+    currentRound: 4,
+    matches: [],
+    prizePool: '$25,000'
+  },
+  {
+    id: '3',
+    name: 'Cosmos Classic',
+    description: 'Round robin format - everyone plays everyone',
+    startDate: '2025-01-10',
+    endDate: '2025-02-28',
+    location: 'Online',
+    format: 'round-robin',
+    status: 'upcoming',
+    maxPlayers: 12,
+    registeredPlayers: ['1', '2', '3', '4', '5', '6'],
+    rounds: 11,
+    currentRound: 0,
+    matches: [],
+    prizePool: '$30,000'
+  },
+  {
+    id: '4',
+    name: 'Starlight Speed Chess',
+    description: 'Blitz tournament with 3+2 time control',
+    startDate: '2024-12-20',
+    endDate: '2024-12-22',
+    location: 'Online',
+    format: 'swiss',
+    status: 'upcoming',
+    maxPlayers: 64,
+    registeredPlayers: [],
+    rounds: 7,
+    currentRound: 0,
+    matches: [],
+    prizePool: '$10,000'
+  }
+];
