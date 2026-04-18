@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { Trophy, Users, TrendingUp, Calendar } from 'lucide-react';
+// Dashboard component
 import StatsCard from '../components/StatsCard';
 import TournamentCard from '../components/TournamentCard';
 import PlayerCard from '../components/PlayerCard';

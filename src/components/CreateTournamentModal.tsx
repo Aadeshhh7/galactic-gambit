@@ -9,13 +9,23 @@ interface CreateTournamentModalProps {
 }
 
 export default function CreateTournamentModal({ isOpen, onClose, onCreate }: CreateTournamentModalProps) {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<{
+    name: string;
+    description: string;
+    startDate: string;
+    endDate: string;
+    location: string;
+    format: 'swiss' | 'round-robin' | 'knockout';
+    maxPlayers: number;
+    rounds: number;
+    prizePool: string;
+  }>({
     name: '',
     description: '',
     startDate: '',
     endDate: '',
     location: 'Online',
-    format: 'swiss' as const,
+    format: 'swiss',
     maxPlayers: 32,
     rounds: 9,
     prizePool: '$10,000',

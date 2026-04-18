@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { ArrowLeft, Trophy, Calendar, MapPin, Users, Award, ChevronRight, Check } from 'lucide-react';
+import { ArrowLeft, Trophy, Calendar, MapPin, Users, Award, Check } from 'lucide-react';
 import type { Tournament, Player, Match } from '../types';
 
 interface TournamentDetailProps {
